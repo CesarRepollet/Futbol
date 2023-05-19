@@ -90,6 +90,6 @@ public class Jugador {
                 ", asistencias=" + asistencias +
                 ", tarjetas_amarillas=" + tarjetas_amarillas +
                 ", tarjetas_rojas=" + tarjetas_rojas +
-                '}';
+                '}' + '\n';
     }
 }

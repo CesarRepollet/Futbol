@@ -3,13 +3,17 @@ import java.util.List;
 
 public class Equipo {
     private String nombre;
+    private String nombre_estadio;
     private int puntos;
+    private String nombre_aficion;
     private List<Jugador> jugadores;
 
 
-    public Equipo(int puntos, String nombre) {
+    public Equipo(String nombre, String nombre_estadio, int puntos, String nombre_aficion) {
         this.nombre = nombre;
+        this.nombre_estadio = nombre_estadio;
         this.puntos = puntos;
+        this.nombre_aficion = nombre_aficion;
         this.jugadores = new ArrayList<>();
     }
 
@@ -47,6 +51,6 @@ public class Equipo {
                 "nombre='" + nombre + '\'' +
                 ", puntos=" + puntos +
                 ", jugadores=" + jugadores +
-                '}';
+                '}' + '\n';
     }
 }
