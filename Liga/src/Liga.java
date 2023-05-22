@@ -69,8 +69,8 @@ public class Liga {
             }
         }
     }
-    public void agregarjornada(String n_jornada, int resultado, String incidencias, String revisiones){
-        Jornada jornada_nueva = new Jornada(n_jornada, resultado, incidencias, revisiones);
+    public void agregarjornada(String n_jornada, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones){
+        Jornada jornada_nueva = new Jornada(n_jornada, equipos_participantes, dias_mes, resultado, incidencias, revisiones);
         jornadas.add(jornada_nueva);
     }
     public void eliminarjornada(String n_jornada){
@@ -85,6 +85,17 @@ public class Liga {
         arbitros.add(arbitro_nuevo);
     }
     public void eliminararbitro(int n_arbitro){
+        for (int i = 0; i < arbitros.size(); i++) {
+            if (n_arbitro.equals(arbitros.get(i).getn_arbitro())){
+                arbitros.remove(i);
+            }
+        }
+    }
+    public void agregarliga(String nombre, int sueldo, String nacionalidad, int n_arbitro, int amonestaciones, int expulsiones){
+        Arbitro arbitro_nuevo = new Arbitro(nombre, sueldo, nacionalidad, n_arbitro, amonestaciones, expulsiones);
+        arbitros.add(arbitro_nuevo);
+    }
+    public void eliminarliga(String nombre){
         for (int i = 0; i < arbitros.size(); i++) {
             if (n_arbitro.equals(arbitros.get(i).getn_arbitro())){
                 arbitros.remove(i);

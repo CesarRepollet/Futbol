@@ -1,8 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public class Jornada {
+public class Jornada_copa {
     private String n_jornada;
+    private String nombre_ronda;
     private String equipos_participantes;
     private int dias_mes;
     private int resultado;
@@ -12,18 +10,19 @@ public class Jornada {
     private List<Equipo> equipos;
     private List<Arbitro> arbitros;
 
-    public Jornada() {
+    public Jornada_copa() {
     }
 
-    public Jornada(String n_jornada, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones) {
+    public Jornada_copa(String n_jornada, String nombre_ronda, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones, List<Equipo> equipos, List<Arbitro> arbitros) {
         this.n_jornada = n_jornada;
+        this.nombre_ronda = nombre_ronda;
         this.equipos_participantes = equipos_participantes;
         this.dias_mes = dias_mes;
         this.resultado = resultado;
         this.incidencias = incidencias;
         this.revisiones = revisiones;
-        this.equipos = new ArrayList<>();
-        this.arbitros = new ArrayList<>();
+        this.equipos = equipos;
+        this.arbitros = arbitros;
     }
 
     public String getN_jornada() {
@@ -33,6 +32,31 @@ public class Jornada {
     public void setN_jornada(String n_jornada) {
         this.n_jornada = n_jornada;
     }
+
+    public String getNombre_ronda() {
+        return nombre_ronda;
+    }
+
+    public void setNombre_ronda(String nombre_ronda) {
+        this.nombre_ronda = nombre_ronda;
+    }
+
+    public String getEquipos_participantes() {
+        return equipos_participantes;
+    }
+
+    public void setEquipos_participantes(String equipos_participantes) {
+        this.equipos_participantes = equipos_participantes;
+    }
+
+    public int getDias_mes() {
+        return dias_mes;
+    }
+
+    public void setDias_mes(int dias_mes) {
+        this.dias_mes = dias_mes;
+    }
+
     public int getResultado() {
         return resultado;
     }
@@ -73,26 +97,11 @@ public class Jornada {
         this.arbitros = arbitros;
     }
 
-    public String getEquipos_participantes() {
-        return equipos_participantes;
-    }
-
-    public void setEquipos_participantes(String equipos_participantes) {
-        this.equipos_participantes = equipos_participantes;
-    }
-
-    public int getDias_mes() {
-        return dias_mes;
-    }
-
-    public void setDias_mes(int dias_mes) {
-        this.dias_mes = dias_mes;
-    }
-
     @java.lang.Override
     public java.lang.String toString() {
-        return "Jornada{" +
+        return "Jornada_copa{" +
                 "n_jornada='" + n_jornada + '\'' +
+                ", nombre_ronda='" + nombre_ronda + '\'' +
                 ", equipos_participantes='" + equipos_participantes + '\'' +
                 ", dias_mes=" + dias_mes +
                 ", resultado=" + resultado +
