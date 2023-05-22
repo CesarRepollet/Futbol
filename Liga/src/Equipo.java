@@ -16,7 +16,7 @@ public class Equipo {
         this.puntos = puntos;
         this.nombre_aficion = nombre_aficion;
         this.jugadores = new ArrayList<>();
-        this.estadios = new Arraylist<>();
+        this.estadios = new ArrayList<>();
     }
 
     public Equipo() {
@@ -71,13 +71,13 @@ public class Equipo {
         this.estadios = estadios;
     }
 
-    public void agregarjugador(String nombre, String apellidos, int idjugador, int edad, int numero){
-        Jugador jugador_Nuevo = new Jugador(nombre, apellidos, idjugador, edad, numero);
+    public void agregarjugador(String nombre, String apellidos, int idjugador, int edad, int numero, int goles, int asistencias, int tarjetas_amarillas, int tarjetas_rojas){
+        Jugador jugador_Nuevo = new Jugador(nombre, apellidos, idjugador, edad, numero, goles, asistencias, tarjetas_amarillas, tarjetas_rojas);
         jugadores.add(jugador_Nuevo);
     }
     public void eliminarjugador(int idjugador){
         for (int i = 0; i < jugadores.size(); i++) {
-            if (idjugador.equals(jugadores.get(i).getidjugador())){
+            if (idjugador==(jugadores.get(i).getidjugador())){
                 jugadores.remove(i);
             }
         }

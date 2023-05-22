@@ -25,7 +25,7 @@ public class Jornada {
         this.revisiones = revisiones;
         this.equipos = new ArrayList<>();
         this.arbitros = new ArrayList<>();
-        this.estadios = new Arraylist<>();
+        this.estadios = new ArrayList<>();
     }
 
     public String getN_jornada() {

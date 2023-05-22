@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Jornada_copa {
     private String n_jornada;
     private String nombre_ronda;

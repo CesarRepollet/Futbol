@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Copadelrey {
 
     private String club_campeon;

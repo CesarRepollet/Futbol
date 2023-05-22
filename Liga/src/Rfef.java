@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Rfef {
     private String presidente;
     private String competiciones;

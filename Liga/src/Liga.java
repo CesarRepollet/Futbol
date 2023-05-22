@@ -26,7 +26,7 @@ public class Liga {
         this.equipos = new ArrayList<>();
         this.arbitros = new ArrayList<>();
         this.jornadas = new ArrayList<>();
-        this.estadios = new Arraylist<>();
+        this.estadios = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -102,7 +102,7 @@ public class Liga {
     }
     public void eliminarjornada(String n_jornada){
         for (int i = 0; i < jornadas.size(); i++) {
-            if (n_jornada.equals(jornadas.get(i).getNombre())){
+            if (n_jornada.equals(jornadas.get(i).getN_jornada())){
                 jornadas.remove(i);
             }
         }
@@ -113,7 +113,7 @@ public class Liga {
     }
     public void eliminararbitro(int n_arbitro){
         for (int i = 0; i < arbitros.size(); i++) {
-            if (n_arbitro.equals(arbitros.get(i).getn_arbitro())){
+            if (n_arbitro==(arbitros.get(i).getn_arbitro())){
                 arbitros.remove(i);
             }
         }
@@ -124,7 +124,7 @@ public class Liga {
     }
     public void eliminarestadios(String nombre){
         for (int i = 0; i < estadios.size(); i++) {
-            if (nombre.equals(estadios.get(i).getn_arbitro())){
+            if (nombre.equals(estadios.get(i).getNombre())){
                 estadios.remove(i);
             }
         }
