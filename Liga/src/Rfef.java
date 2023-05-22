@@ -9,6 +9,7 @@ public class Rfef {
     private List<Jugador> jugadores;
     private List<Jornada> jornadas;
     private List<Jornada_copa> ronda;
+    private List<Estadio> estadios;
     public Rfef() {
     }
 

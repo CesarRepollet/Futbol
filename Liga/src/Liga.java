@@ -8,13 +8,14 @@ public class Liga {
     private List<Equipo> equipos;
     private List<Arbitro> arbitros;
     private List<Jornada> jornadas;
+    private List<Estadio> estadios;
 
     public Liga(String nombre, List<Equipo> equipos) {
         this.nombre = nombre;
         this.equipos = equipos;
     }
 
-    public Liga(String nombre) {
+    public Liga(String nombre, String pais, int presupuesto) {
         this.nombre = nombre;
         this.equipos = new ArrayList<>();
     }
@@ -25,6 +26,7 @@ public class Liga {
         this.equipos = new ArrayList<>();
         this.arbitros = new ArrayList<>();
         this.jornadas = new ArrayList<>();
+        this.estadios = new Arraylist<>();
     }
 
     public String getNombre() {
@@ -58,6 +60,31 @@ public class Liga {
     public void setJornadas(List<Jornada> jornadas) {
         this.jornadas = jornadas;
     }
+
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
+    public int getPresupuesto() {
+        return presupuesto;
+    }
+
+    public void setPresupuesto(int presupuesto) {
+        this.presupuesto = presupuesto;
+    }
+
+    public List<Estadio> getEstadios() {
+        return estadios;
+    }
+
+    public void setEstadios(List<Estadio> estadios) {
+        this.estadios = estadios;
+    }
+
     public void agregarequipo(String nombre, String nombre_estadio, int puntos, String nombre_aficion){
         Equipo equipo_nuevo = new Equipo(nombre, nombre_estadio, puntos, nombre_aficion);
         equipos.add(equipo_nuevo);
@@ -91,24 +118,27 @@ public class Liga {
             }
         }
     }
-    public void agregarliga(String nombre, int sueldo, String nacionalidad, int n_arbitro, int amonestaciones, int expulsiones){
-        Arbitro arbitro_nuevo = new Arbitro(nombre, sueldo, nacionalidad, n_arbitro, amonestaciones, expulsiones);
-        arbitros.add(arbitro_nuevo);
+    public void agregarestadios(String nombre, int capacidad, String ciudad, String equipo){
+        Estadio estadio_nuevo = new Estadio(nombre, capacidad, ciudad, equipo);
+        estadios.add(estadio_nuevo);
     }
-    public void eliminarliga(String nombre){
-        for (int i = 0; i < arbitros.size(); i++) {
-            if (n_arbitro.equals(arbitros.get(i).getn_arbitro())){
-                arbitros.remove(i);
+    public void eliminarestadios(String nombre){
+        for (int i = 0; i < estadios.size(); i++) {
+            if (nombre.equals(estadios.get(i).getn_arbitro())){
+                estadios.remove(i);
             }
         }
     }
-    @Override
-    public String toString() {
+    @java.lang.Override
+    public java.lang.String toString() {
         return "Liga{" +
                 "nombre='" + nombre + '\'' +
-                ", equipos=" + equipos + '\'' +
-                ", Arbitro=" + arbitros + '\'' +
-                ", Jornada=" + jornadas + '\'' +
-                '}' + '\n';
+                ", pais='" + pais + '\'' +
+                ", presupuesto=" + presupuesto +
+                ", equipos=" + equipos +
+                ", arbitros=" + arbitros +
+                ", jornadas=" + jornadas +
+                ", estadios=" + estadios +
+                '}';
     }
 }

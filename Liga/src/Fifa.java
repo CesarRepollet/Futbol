@@ -29,8 +29,8 @@ public class Fifa {
     public void setN_ligas(int n_ligas) {
         this.n_ligas = n_ligas;
     }
-    public void agregarliga(String nombre){
-        Liga liga_nueva = new Liga(nombre);
+    public void agregarliga(String nombre, String pais, int presupuesto){
+        Liga liga_nueva = new Liga(nombre, pais, presupuesto);
         ligas.add(liga_nueva);
     }
     public void eliminarliga(String nombre){

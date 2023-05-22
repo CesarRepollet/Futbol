@@ -9,11 +9,12 @@ public class Jornada_copa {
 
     private List<Equipo> equipos;
     private List<Arbitro> arbitros;
+    private List<Estadio> estadios;
 
     public Jornada_copa() {
     }
 
-    public Jornada_copa(String n_jornada, String nombre_ronda, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones, List<Equipo> equipos, List<Arbitro> arbitros) {
+    public Jornada_copa(String n_jornada, String nombre_ronda, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones, List<Equipo> equipos, List<Arbitro> arbitros, List<Estadio> estadios) {
         this.n_jornada = n_jornada;
         this.nombre_ronda = nombre_ronda;
         this.equipos_participantes = equipos_participantes;
@@ -23,6 +24,7 @@ public class Jornada_copa {
         this.revisiones = revisiones;
         this.equipos = equipos;
         this.arbitros = arbitros;
+        this.estadios = estadios;
     }
 
     public String getN_jornada() {
@@ -97,6 +99,14 @@ public class Jornada_copa {
         this.arbitros = arbitros;
     }
 
+    public List<Estadio> getEstadios() {
+        return estadios;
+    }
+
+    public void setEstadios(List<Estadio> estadios) {
+        this.estadios = estadios;
+    }
+
     @java.lang.Override
     public java.lang.String toString() {
         return "Jornada_copa{" +
@@ -109,6 +119,7 @@ public class Jornada_copa {
                 ", revisiones='" + revisiones + '\'' +
                 ", equipos=" + equipos +
                 ", arbitros=" + arbitros +
+                ", estadios=" + estadios +
                 '}';
     }
 }

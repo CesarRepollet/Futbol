@@ -11,6 +11,7 @@ public class Jornada {
 
     private List<Equipo> equipos;
     private List<Arbitro> arbitros;
+    private List<Estadio> estadios;
 
     public Jornada() {
     }
@@ -24,6 +25,7 @@ public class Jornada {
         this.revisiones = revisiones;
         this.equipos = new ArrayList<>();
         this.arbitros = new ArrayList<>();
+        this.estadios = new Arraylist<>();
     }
 
     public String getN_jornada() {
@@ -89,6 +91,14 @@ public class Jornada {
         this.dias_mes = dias_mes;
     }
 
+    public List<Estadio> getEstadios() {
+        return estadios;
+    }
+
+    public void setEstadios(List<Estadio> estadios) {
+        this.estadios = estadios;
+    }
+
     @java.lang.Override
     public java.lang.String toString() {
         return "Jornada{" +
@@ -100,6 +110,7 @@ public class Jornada {
                 ", revisiones='" + revisiones + '\'' +
                 ", equipos=" + equipos +
                 ", arbitros=" + arbitros +
+                ", estadios=" + estadios +
                 '}';
     }
 }

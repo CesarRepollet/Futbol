@@ -4,7 +4,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Fifa fifa = new Fifa("Zeferin", 20);
-        Liga liga1 = new Liga("Liga BBVA");
+        Rfef rfef = new Rfef("Luis Manuel Rubiales", "LIGA BBVA, Copa del Rey","Real Madrid", 1000000000);
+        Liga liga1 = new Liga("Liga BBVA", "España", 1000000000);
         Equipo equipo1 = new Equipo("Fc Barcelona","Spotify Camp Nou", 0, "Culés");
         Equipo equipo2 = new Equipo("Real Madrid", "Santiago Bernabeu", 0, "Merengues");
         Equipo equipo3 = new Equipo("Atletico de Madrid", "Civitas Metropolitano", 0, "Colchoneros");
@@ -149,7 +150,7 @@ public class Main {
         liga1.eliminarjornada("1a");
         liga1.agregararbitro("", 5000, "Española",21, 0, 0);
         liga1.eliminararbitro(1);
-        fifa.agregarliga("Premier League");
+        fifa.agregarliga("Premier League", "Inglaterra", 1000000000);
         fifa.eliminarliga("");
         System.out.println(liga1);
     }
