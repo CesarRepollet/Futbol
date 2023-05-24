@@ -13,11 +13,15 @@ public class Liga {
     public Liga(String nombre, List<Equipo> equipos) {
         this.nombre = nombre;
         this.equipos = equipos;
+        this.arbitros = new ArrayList<>();
     }
 
     public Liga(String nombre, String pais, int presupuesto) {
         this.nombre = nombre;
         this.equipos = new ArrayList<>();
+        this.estadios = new ArrayList<>();
+        this.jornadas = new ArrayList<>();
+        this.arbitros = new ArrayList<>();
     }
 
     public Liga() {

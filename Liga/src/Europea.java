@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Europea {
@@ -22,6 +23,10 @@ public class Europea {
         this.edicion = edicion;
         this.anterior_campeon = anterior_campeon;
         this.ronda_eliminatoria = ronda_eliminatoria;
+        this.gruposEuropas = new ArrayList<>();
+        this.equipos = new ArrayList<>();
+        this.arbitros = new ArrayList<>();
+        this.jornadasEuropas = new ArrayList<>();
         }
 
     public String getNombre() {

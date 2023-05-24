@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Rfef {
@@ -21,6 +22,7 @@ public class Rfef {
         this.competiciones = competiciones;
         this.clubes_campeones = clubes_campeones;
         this.margen_salarial = margen_salarial;
+        this.ligas = new ArrayList<>();
     }
 
     public String getPresidente() {

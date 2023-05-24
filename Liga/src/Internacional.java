@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Internacional {
@@ -10,7 +11,7 @@ public class Internacional {
     private List<Seleccion> selecciones;
     private List<Jugador> jugadores;
     private List<Arbitro> arbitros;
-    private List<Estadio> estadios;
+    private List<Sede> sedes;
     private List<Jornada_internacional> jornadasInternacionals;
     private List<Grupos_internacional> gruposInternacionals;
     public Internacional() {
@@ -22,6 +23,11 @@ public class Internacional {
         this.anterior_campeon = anterior_campeon;
         this.ronda_eliminatoria = ronda_eliminatoria;
         this.estadio_final = estadio_final;
+        this.selecciones = new ArrayList<>();
+        this.sedes = new ArrayList<>();
+        this.arbitros = new ArrayList<>();
+        this.gruposInternacionals = new ArrayList<>();
+        this.jornadasInternacionals = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -104,12 +110,12 @@ public class Internacional {
         this.gruposInternacionals = gruposInternacionals;
     }
 
-    public List<Estadio> getEstadios() {
-        return estadios;
+    public List<Sede> getSedes() {
+        return sedes;
     }
 
-    public void setEstadios(List<Estadio> estadios) {
-        this.estadios = estadios;
+    public void setSedes(List<Sede> sedes) {
+        this.sedes = sedes;
     }
 
     public void agregarseleccion(String seleccion, int puntos, String nombre_aficion){
@@ -145,14 +151,25 @@ public class Internacional {
             }
         }
     }
-    public void agregarestadios(String nombre, int capacidad, String ciudad, String equipo){
-        Estadio estadio_nuevo = new Estadio(nombre, capacidad, ciudad, equipo);
-        estadios.add(estadio_nuevo);
+    public void agregarsede(String pais, int edicion, String estadio_final){
+        Sede sede_nueva = new Sede(pais, edicion, estadio_final);
+        sedes.add(sede_nueva);
     }
-    public void eliminarestadios(String nombre){
-        for (int i = 0; i < estadios.size(); i++) {
-            if (nombre.equals(estadios.get(i).getNombre())){
-                estadios.remove(i);
+    public void eliminarsede(int edicion){
+        for (int i = 0; i < sedes.size(); i++) {
+            if (edicion==(sedes.get(i).getEdicion())){
+                sedes.remove(i);
+            }
+        }
+    }
+    public void agregargrupo(String nombre_grupo, String equipo1, String equipo2, String equipo3, String equipo4, int puntose1, int puntose2, int puntose3, int puntose4){
+        Grupos_internacional Grupo_nuevo = new Grupos_internacional(nombre_grupo, equipo1, equipo2, equipo3, equipo4, puntose1, puntose2, puntose3, puntose4);
+        gruposInternacionals.add(Grupo_nuevo);
+    }
+    public void eliminargrupo(String nombre_grupo){
+        for (int i = 0; i < gruposInternacionals.size(); i++) {
+            if (nombre_grupo.equals(gruposInternacionals.get(i).getNombre_grupo())){
+                gruposInternacionals.remove(i);
             }
         }
     }
