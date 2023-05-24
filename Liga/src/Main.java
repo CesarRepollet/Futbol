@@ -146,6 +146,16 @@ public class Main {
         jornada18a.getArbitros().add(arbitro18);
         jornada19a.getArbitros().add(arbitro19);
         System.out.println(liga1);
+        rfef.agregarliga("Liga Smartbank","España",1000000000);
+        rfef.agregarliga("Primera RFEF", "España", 10000000);
+        rfef.getLigas().get(0).agregarequipo();
+        rfef.getLigas().get(0).agregarestadios();
+        rfef.getLigas().get(0).agregarjornada();
+        rfef.getLigas().get(0).agregararbitro();
+        rfef.getLigas().get(1).agregarequipo();
+        rfef.getLigas().get(1).agregarestadios();
+        rfef.getLigas().get(1).agregararbitro();
+        rfef.getLigas().get(1).agregarjornada();
         fifa.agregarliga("Premier League", "Inglaterra", 1000000000);
         fifa.getLigas().get(0).agregarequipo("Manchester City", "Etihad Stadium", 0, "Citycens");
         fifa.getLigas().get(0).agregarjornada("1a","MCY-MCU",12/8, 2-0,"Ninguna","Todo OK");

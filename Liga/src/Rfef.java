@@ -5,13 +5,14 @@ public class Rfef {
     private String competiciones;
     private String clubes_campeones;
     private int margen_salarial;
-
+    private List<Liga> ligas;
     private List<Equipo> equipos;
     private List<Arbitro> arbitros;
     private List<Jugador> jugadores;
     private List<Jornada> jornadas;
     private List<Jornada_copa> ronda;
     private List<Estadio> estadios;
+
     public Rfef() {
     }
 
@@ -54,6 +55,14 @@ public class Rfef {
         this.margen_salarial = margen_salarial;
     }
 
+    public List<Liga> getLigas() {
+        return ligas;
+    }
+
+    public void setLigas(List<Liga> ligas) {
+        this.ligas = ligas;
+    }
+
     public List<Equipo> getEquipos() {
         return equipos;
     }
@@ -86,6 +95,14 @@ public class Rfef {
         this.jornadas = jornadas;
     }
 
+    public List<Estadio> getEstadios() {
+        return estadios;
+    }
+
+    public void setEstadios(List<Estadio> estadios) {
+        this.estadios = estadios;
+    }
+
     public List<Jornada_copa> getRonda() {
         return ronda;
     }
@@ -93,6 +110,32 @@ public class Rfef {
     public void setRonda(List<Jornada_copa> ronda) {
         this.ronda = ronda;
     }
+
+    public void agregarliga(String nombre, String pais, int presupuesto) {
+        Liga liga_nueva = new Liga(nombre, pais, presupuesto);
+        ligas.add(liga_nueva);
+    }
+
+    public void eliminarliga(String nombre) {
+        for (int i = 0; i < ligas.size(); i++) {
+            if (nombre.equals(ligas.get(i).getNombre())) {
+                ligas.remove(i);
+            }
+        }
+    }
+    public void agregarcampeon(String nombre, String nombre_estadio, int puntos, String nombre_aficion) {
+        Equipo campeon_nuevo = new Equipo(nombre, nombre_estadio, puntos, nombre_aficion);
+        equipos.add(campeon_nuevo);
+    }
+
+    public void eliminarcampeon(String nombre) {
+        for (int i = 0; i < equipos.size(); i++) {
+            if (nombre.equals(equipos.get(i).getNombre())) {
+                equipos.remove(i);
+            }
+        }
+    }
+
 
     @java.lang.Override
     public java.lang.String toString() {

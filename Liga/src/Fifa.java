@@ -38,11 +38,6 @@ public class Fifa {
         this.n_ligas = n_ligas;
     }
 
-    public void agregarliga(String nombre, String pais, int presupuesto){
-        Liga liga_nueva = new Liga(nombre, pais, presupuesto);
-        ligas.add(liga_nueva);
-    }
-
     public List<Equipo> getEquipos() {
         return equipos;
     }
@@ -75,6 +70,10 @@ public class Fifa {
         this.ligas = ligas;
     }
 
+    public void agregarliga(String nombre, String pais, int presupuesto){
+        Liga liga_nueva = new Liga(nombre, pais, presupuesto);
+        ligas.add(liga_nueva);
+    }
     public void eliminarliga(String nombre){
         for (int i = 0; i < ligas.size(); i++) {
             if (nombre.equals(ligas.get(i).getNombre())){
