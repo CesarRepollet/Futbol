@@ -13,10 +13,7 @@ public class Jornada_internacional {
     private List<Arbitro> arbitros;
     private List<Estadio> estadios;
 
-    public Jornada_internacional(String n_jornada, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones) {
-    }
-
-    public Jornada_internacional(String n_jornada, String nombre_ronda, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones) {
+    public Jornada_internacional(String n_jornada, String nombre_ronda, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones){
         this.n_jornada = n_jornada;
         this.nombre_ronda = nombre_ronda;
         this.equipos_participantes = equipos_participantes;

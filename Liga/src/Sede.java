@@ -4,6 +4,9 @@ public class Sede {
     private String estadio_final;
 
     public Sede(String pais, int edicion, String estadio_final) {
+        this.pais = pais;
+        this.edicion = edicion;
+        this.estadio_final = estadio_final;
     }
 
     public String getPais() {

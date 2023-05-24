@@ -173,11 +173,11 @@ public class Main {
         fifa.getLigas().get(0).agregarestadios("Etihad Stadium",70000,"Manchester","Manchester City");
         Mundial.agregarseleccion("España",0,"La Roja");
         Mundial.agregarsede("España",700,"Estadio Olimpico de Barcelona");
-        Mundial.agregarjornada("1a","ESP-ITL",1/12,1-0,"Ninguna","Todo OK");
+        Mundial.agregarjornada("1a","Grupos","ESP-ITL",12,1-0,"Ninguna","Todo OK");
         Mundial.agregararbitro("Harry Potter", 6000, "Inglesa",110,0,0);
         Eurocopa.agregarseleccion("Inglaterra",0,"Loyals");
         Eurocopa.agregarsede("Francia",600,"Parque de los Principes");
-        Eurocopa.agregarjornada("1a","ING-ALM",1/9,2-1,"Ninguna","Todo OK");
+        Eurocopa.agregarjornada("1a","Grupos","ING-ALM",1,2-1,"Ninguna","Todo OK");
         Eurocopa.agregararbitro("Alejandro Hernandez Hernandez",5500,"Español",9,0,0);
         Champions.agregarequipo("FC Barcelona","Spotify Camp Nou",0,"Culés");
         Champions.agregarjornada("1a","FCB-BAY",7/9,3-2,"Ninguna","Todo OK");

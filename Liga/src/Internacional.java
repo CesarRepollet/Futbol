@@ -129,8 +129,8 @@ public class Internacional {
             }
         }
     }
-    public void agregarjornada(String n_jornada, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones){
-        Jornada_internacional jornada_nueva = new Jornada_internacional(n_jornada, equipos_participantes, dias_mes, resultado, incidencias, revisiones);
+    public void agregarjornada(String n_jornada, String nombre_ronda, String equipos_participantes, int dias_mes, int resultado, String incidencias, String revisiones){
+        Jornada_internacional jornada_nueva = new Jornada_internacional(n_jornada, nombre_ronda, equipos_participantes, dias_mes, resultado, incidencias, revisiones);
         jornadasInternacionals.add(jornada_nueva);
     }
     public void eliminarjornada(String n_jornada){
