@@ -12,26 +12,11 @@ public class Main {
         Internacional Eurocopa = new Internacional("Eurocopa", 600, "Italia","Octavos, Quartos, Semis, Final","Estadio Olimpiko");
         Internacional Mundial = new Internacional("Mundial", 700, "Argentina","Octavos, Quartos, Semis, Final","Estadio Qatar Fundation");
         System.out.println(liga1);
-        Equipo equipo1 = new Equipo("Fc Barcelona", "Spotify Camp Nou", 0, "Culés");
-        Equipo equipo2 = new Equipo("Real Madrid", "Santiago Bernabeu", 0, "Merengues");
-        Equipo equipo3 = new Equipo("Atletico de Madrid", "Civitas Metropolitano", 0, "Colchoneros");
-        Equipo equipo4 = new Equipo("Sevilla", "Sanchez Pijuan", 0, "Palanganas");
-        Equipo equipo5 = new Equipo("Betis", "Benito Villamarin", 0, "Beticos");
-        Equipo equipo6 = new Equipo("Valencia", "Mestalla", 0, "Ché");
-        Equipo equipo7 = new Equipo("Villareal", "Ceramica", 0, "groguets");
-        Equipo equipo8 = new Equipo("Rayo Vallecano", "Vallecas", 0, "Franjirojos");
-        Equipo equipo9 = new Equipo("Español", "Cornellat", 0, "Pericos");
-        Equipo equipo10 = new Equipo("Girona", "Montilivi", 0, "Albirrojos");
-        Equipo equipo11 = new Equipo("Real Sociedad", "Reale Arena(Anoeta)", 0, "txuri-urdin");
-        Equipo equipo12 = new Equipo("Athletic Club", "San Mames", 0, "Leones");
-        Equipo equipo13 = new Equipo("FC Osasuna", "El Sadar", 0, "rojillos");
-        Equipo equipo14 = new Equipo("Mallorca", "Son Moix", 0, "Bermellon");
-        Equipo equipo15 = new Equipo("Celta de Vigo", "Abanca Valaidos", 0, "Olivicos");
-        Equipo equipo16 = new Equipo("Almeria", "Juegos Mediterraneos", 0, "Indalicos");
-        Equipo equipo17 = new Equipo("Cadíz", "Nuevo Mirandilla", 0, "Submarino Amarillo");
-        Equipo equipo18 = new Equipo("Valladolid", "Jose Zorrilla", 0, "vallisoletanos");
-        Equipo equipo19 = new Equipo("Getafe ", "Alfonso Perez", 0, "Azulones");
-        Equipo equipo20 = new Equipo("Elche", "Manuel Martinez Velero", 0, "Ilicitano");
+
+
+        //MOVIDOS LOS EQUIPOS A DATASOURCE. FALTA COMPLETARLO
+
+
         Jugador portero1 = new Jugador("Marc-André", "Ter Stegen", 1, 31, 1, 0, 0, 0, 0);
         Jugador portero2 = new Jugador("Thibaut", "Courtois", 2, 31, 1, 0, 0, 0, 0);
         Jugador portero3 = new Jugador("Jan", "Oblak", 3, 30, 1, 0, 0, 0, 0);
@@ -91,6 +76,15 @@ public class Main {
         Jornada jornada17a = new Jornada("17a", "FCB-MRC", 13 / 1, 2 - 1, "ninguna", "Todo OK");
         Jornada jornada18a = new Jornada("18a", "FCB-CLT", 20 / 1, 1 - 0, "ninguna", "Todo OK");
         Jornada jornada19a = new Jornada("19a", "FCB-ELC", 27 / 1, 3 - 0, "ninguna", "Todo OK");
+
+        //Observa este cambio y dime si lo entiendes
+        for (int i = 0; i < DataSource.nombreEquipos.length; i++) {
+            Equipo equipo = new Equipo(DataSource.nombreEquipos[i], DataSource.nombreEstadios[i],0,DataSource.nombreAficiones[i] );
+            liga1.getEquipos().add(equipo);
+        }
+
+        /*
+        Lo anterior sustituye a esto
         liga1.getEquipos().add(equipo1);
         liga1.getEquipos().add(equipo2);
         liga1.getEquipos().add(equipo3);
@@ -111,6 +105,11 @@ public class Main {
         liga1.getEquipos().add(equipo18);
         liga1.getEquipos().add(equipo19);
         liga1.getEquipos().add(equipo20);
+
+         */
+
+
+        /*
         equipo1.getJugadores().add(portero1);
         equipo2.getJugadores().add(portero2);
         equipo3.getJugadores().add(portero3);
@@ -130,7 +129,7 @@ public class Main {
         equipo17.getJugadores().add(portero17);
         equipo18.getJugadores().add(portero18);
         equipo19.getJugadores().add(portero19);
-        equipo20.getJugadores().add(portero20);
+        equipo20.getJugadores().add(portero20);*/
         jornada1a.getArbitros().add(arbitro1);
         jornada2a.getArbitros().add(arbitro2);
         jornada3a.getArbitros().add(arbitro3);

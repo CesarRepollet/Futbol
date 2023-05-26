@@ -4,8 +4,8 @@ import java.util.List;
 public class Rfef {
     private String presidente;
     private String competiciones;
-    private String clubes_campeones;
-    private int margen_salarial;
+    private String clubesCampeones;
+    private int margenSalarial;
     private List<Liga> ligas;
     private List<Equipo> equipos;
     private List<Arbitro> arbitros;
@@ -17,11 +17,11 @@ public class Rfef {
     public Rfef() {
     }
 
-    public Rfef(String presidente, String competiciones, String clubes_campeones, int margen_salarial) {
+    public Rfef(String presidente, String competiciones, String clubesCampeones, int margenSalarial) {
         this.presidente = presidente;
         this.competiciones = competiciones;
-        this.clubes_campeones = clubes_campeones;
-        this.margen_salarial = margen_salarial;
+        this.clubesCampeones = clubesCampeones;
+        this.margenSalarial = margenSalarial;
         this.ligas = new ArrayList<>();
     }
 
@@ -41,20 +41,20 @@ public class Rfef {
         this.competiciones = competiciones;
     }
 
-    public String getClubes_campeones() {
-        return clubes_campeones;
+    public String getClubesCampeones() {
+        return clubesCampeones;
     }
 
-    public void setClubes_campeones(String clubes_campeones) {
-        this.clubes_campeones = clubes_campeones;
+    public void setClubesCampeones(String clubesCampeones) {
+        this.clubesCampeones = clubesCampeones;
     }
 
-    public int getMargen_salarial() {
-        return margen_salarial;
+    public int getMargenSalarial() {
+        return margenSalarial;
     }
 
-    public void setMargen_salarial(int margen_salarial) {
-        this.margen_salarial = margen_salarial;
+    public void setMargenSalarial(int margenSalarial) {
+        this.margenSalarial = margenSalarial;
     }
 
     public List<Liga> getLigas() {
@@ -144,8 +144,8 @@ public class Rfef {
         return "Rfef{" +
                 "presidente='" + presidente + '\'' +
                 ", competiciones='" + competiciones + '\'' +
-                ", clubes_campeones='" + clubes_campeones + '\'' +
-                ", margen_salarial=" + margen_salarial +
+                ", clubes_campeones='" + clubesCampeones + '\'' +
+                ", margen_salarial=" + margenSalarial +
                 ", equipos=" + equipos +
                 ", arbitros=" + arbitros +
                 ", jugadores=" + jugadores +

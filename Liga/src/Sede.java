@@ -1,12 +1,12 @@
 public class Sede {
     private String pais;
     private int edicion;
-    private String estadio_final;
+    private String estadioFinal;
 
-    public Sede(String pais, int edicion, String estadio_final) {
+    public Sede(String pais, int edicion, String estadioFinal) {
         this.pais = pais;
         this.edicion = edicion;
-        this.estadio_final = estadio_final;
+        this.estadioFinal = estadioFinal;
     }
 
     public String getPais() {
@@ -25,12 +25,12 @@ public class Sede {
         this.edicion = edicion;
     }
 
-    public String getEstadio_final() {
-        return estadio_final;
+    public String getEstadioFinal() {
+        return estadioFinal;
     }
 
-    public void setEstadio_final(String estadio_final) {
-        this.estadio_final = estadio_final;
+    public void setEstadioFinal(String estadioFinal) {
+        this.estadioFinal = estadioFinal;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class Sede {
         return "Sede{" +
                 "pais='" + pais + '\'' +
                 ", edicion=" + edicion +
-                ", estadio_final='" + estadio_final + '\'' +
+                ", estadio_final='" + estadioFinal + '\'' +
                 '}';
     }
 }

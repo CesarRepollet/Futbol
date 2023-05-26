@@ -36,7 +36,7 @@ public class Seleccion {
         return nombre_aficion;
     }
 
-    public void setNombre_aficion(String nombre_aficion) {
+    public void setNombreAficion(String nombre_aficion) {
         this.nombre_aficion = nombre_aficion;
     }
 
