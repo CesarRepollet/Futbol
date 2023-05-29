@@ -1,32 +1,269 @@
 public class DataSource {
 
-    public static String[] nombreEquipos = {"Fc Barcelona","Real Madrid","Atletico de Madrid","Sevilla"};
-    public static String[] nombreEstadios = {"Spotify Camp Nou","Santiago Bernabeu","Civitas Metropolitano","Sanchez Pijuan"};
-    public static String[] nombreAficiones = {"Culés","Merengues","Colchoneros","Palanganas"};
+    public static String[] nombreEquipos = {
+                                                "Fc Barcelona",
+                                                "Real Madrid",
+                                                "Atletico de Madrid",
+                                                "Sevilla",
+                                                "Betis",
+                                                "Valencia",
+                                                "Villareal",
+                                                "Rayo Vallecano",
+                                                "Español",
+                                                "Girona",
+                                                "Real Sociedad",
+                                                "Athletic Club",
+                                                "FC Osasuna",
+                                                "CD Mallorca",
+                                                "Celta de Vigo",
+                                                "Almeria",
+                                                "Cadíz",
+                                                "Valladolid",
+                                                "Getafe",
+                                                "Elche"
+    };
+    public static String[] nombreEstadios = {
+                                                "Spotify Camp Nou",
+                                                "Santiago Bernabeu",
+                                                "Civitas Metropolitano",
+                                                "Sanchez Pijuan",
+                                                "Benito Villamarin",
+                                                "Mestalla",
+                                                "La Ceramica",
+                                                "Vallecas",
+                                                "Cornellat",
+                                                "Montilivi",
+                                                "Reale Arena(Anoeta)",
+                                                "San Mames",
+                                                "El Sadar",
+                                                "Son Moix",
+                                                "Abanca Valaidos",
+                                                "Juegos Mediterraneos",
+                                                "Nuevo Mirandilla",
+                                                "Jose Zorrilla",
+                                                "Alfonso Perez",
+                                                "Manuel Martinez Velero"
+    };
+    public static String[] nombreAficiones = {
+                                                "Culés",
+                                                "Merengues",
+                                                "Colchoneros",
+                                                "Palanganas",
+                                                "Beticos",
+                                                "Ché",
+                                                "groguets",
+                                                "Franjirojos",
+                                                "Pericos",
+                                                "Albirrojos",
+                                                "txuri-urdin",
+                                                "Leones",
+                                                "rojillos",
+                                                "Bermellon",
+                                                "Olivicos",
+                                                "Indalicos",
+                                                "Submarino Amarillo",
+                                                "vallisoletanos",
+                                                "Azulones",
+                                                "Ilicitano"
+    };
+    public static String[] nombreJugadores = {
+                                                "Marc-André",
+                                                "Thibaut",
+                                                "Jan",
+                                                "Yassine",
+                                                "Claudio",
+                                                "Giorgi",
+                                                "Filip",
+                                                "Stole",
+                                                "Joan",
+                                                "Paulo",
+                                                "Alejandro",
+                                                "Unai",
+                                                "Sergio",
+                                                "Predrag",
+                                                "Agustin",
+                                                "Fernando",
+                                                "Jeremias",
+                                                "Jordi",
+                                                "David",
+                                                "Edgar"
+    };
+    public static String[] apellidoJugadores = {
+                                                "Ter Stegen",
+                                                "Courtois",
+                                                "Oblak",
+                                                "Bono",
+                                                "Bravo",
+                                                "Mamardashvili",
+                                                "Jorgensen",
+                                                "Dimitrievski",
+                                                "Garcia Pons",
+                                                "Gazzaniga",
+                                                "Remiro Gargallo",
+                                                "Simon Mendibil",
+                                                "Herrera",
+                                                "Rajkovic",
+                                                "Marchesin",
+                                                "Martinez Rubio",
+                                                "Connan Ledesma",
+                                                "Masip",
+                                                "Soria Solis",
+                                                "Badia"
+    };
 
+    public static int[] idJugadores = {
+                                                0,
+                                                1,
+                                                2,
+                                                3,
+                                                4,
+                                                5,
+                                                6,
+                                                7,
+                                                8,
+                                                9,
+                                                10,
+                                                11,
+                                                12,
+                                                13,
+                                                14,
+                                                15,
+                                                16,
+                                                17,
+                                                18,
+                                                19
 
-    /*
-
-    Equipo equipo1 = new Equipo("Fc Barcelona", "Spotify Camp Nou", 0, "Culés");
-    Equipo equipo2 = new Equipo("Real Madrid", "Santiago Bernabeu", 0, "Merengues");
-    Equipo equipo3 = new Equipo("Atletico de Madrid", "Civitas Metropolitano", 0, "Colchoneros");
-    Equipo equipo4 = new Equipo("Sevilla", "Sanchez Pijuan", 0, "Palanganas");
-    Equipo equipo5 = new Equipo("Betis", "Benito Villamarin", 0, "Beticos");
-    Equipo equipo6 = new Equipo("Valencia", "Mestalla", 0, "Ché");
-    Equipo equipo7 = new Equipo("Villareal", "Ceramica", 0, "groguets");
-    Equipo equipo8 = new Equipo("Rayo Vallecano", "Vallecas", 0, "Franjirojos");
-    Equipo equipo9 = new Equipo("Español", "Cornellat", 0, "Pericos");
-    Equipo equipo10 = new Equipo("Girona", "Montilivi", 0, "Albirrojos");
-    Equipo equipo11 = new Equipo("Real Sociedad", "Reale Arena(Anoeta)", 0, "txuri-urdin");
-    Equipo equipo12 = new Equipo("Athletic Club", "San Mames", 0, "Leones");
-    Equipo equipo13 = new Equipo("FC Osasuna", "El Sadar", 0, "rojillos");
-    Equipo equipo14 = new Equipo("Mallorca", "Son Moix", 0, "Bermellon");
-    Equipo equipo15 = new Equipo("Celta de Vigo", "Abanca Valaidos", 0, "Olivicos");
-    Equipo equipo16 = new Equipo("Almeria", "Juegos Mediterraneos", 0, "Indalicos");
-    Equipo equipo17 = new Equipo("Cadíz", "Nuevo Mirandilla", 0, "Submarino Amarillo");
-    Equipo equipo18 = new Equipo("Valladolid", "Jose Zorrilla", 0, "vallisoletanos");
-    Equipo equipo19 = new Equipo("Getafe ", "Alfonso Perez", 0, "Azulones");
-    Equipo equipo20 = new Equipo("Elche", "Manuel Martinez Velero", 0, "Ilicitano");
-    */
-
+    };
+    public static int[] edad = {
+                                                31,
+                                                31,
+                                                30,
+                                                32,
+                                                40,
+                                                22,
+                                                21,
+                                                29,
+                                                22,
+                                                31,
+                                                28,
+                                                25,
+                                                29,
+                                                27,
+                                                35,
+                                                32,
+                                                30,
+                                                34,
+                                                30,
+                                                31
+    };
+    public static int[] numero = {
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1,
+                                                1
+    };
+    public static int[] goles = {
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+    };
+    public static int[] asistencias = {
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+    };
+    public static int[] tarjetas_Amarillas = {
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+    };
+    public static int[] tarjetas_Rojas = {
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0,
+                                                0
+    };
 }

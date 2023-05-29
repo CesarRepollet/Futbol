@@ -9,11 +9,13 @@ public class Liga {
     private List<Arbitro> arbitros;
     private List<Jornada> jornadas;
     private List<Estadio> estadios;
+    private List<Jugador> jugadores;
 
     public Liga(String nombre, List<Equipo> equipos) {
         this.nombre = nombre;
         this.equipos = equipos;
         this.arbitros = new ArrayList<>();
+        this.jugadores = new ArrayList<>();
     }
 
     public Liga(String nombre, String pais, int presupuesto) {
@@ -22,6 +24,7 @@ public class Liga {
         this.estadios = new ArrayList<>();
         this.jornadas = new ArrayList<>();
         this.arbitros = new ArrayList<>();
+        this.jugadores = new ArrayList<>();
     }
 
     public Liga() {
@@ -31,6 +34,7 @@ public class Liga {
         this.arbitros = new ArrayList<>();
         this.jornadas = new ArrayList<>();
         this.estadios = new ArrayList<>();
+        this.jugadores = new ArrayList<>();
     }
 
     public String getNombre() {
@@ -87,6 +91,14 @@ public class Liga {
 
     public void setEstadios(List<Estadio> estadios) {
         this.estadios = estadios;
+    }
+
+    public List<Jugador> getJugadores() {
+        return jugadores;
+    }
+
+    public void setJugadores(List<Jugador> jugadores) {
+        this.jugadores = jugadores;
     }
 
     public void agregarequipo(String nombre, String nombre_estadio, int puntos, String nombre_aficion){

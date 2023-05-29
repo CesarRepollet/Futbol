@@ -17,26 +17,7 @@ public class Main {
         //MOVIDOS LOS EQUIPOS A DATASOURCE. FALTA COMPLETARLO
 
 
-        Jugador portero1 = new Jugador("Marc-André", "Ter Stegen", 1, 31, 1, 0, 0, 0, 0);
-        Jugador portero2 = new Jugador("Thibaut", "Courtois", 2, 31, 1, 0, 0, 0, 0);
-        Jugador portero3 = new Jugador("Jan", "Oblak", 3, 30, 1, 0, 0, 0, 0);
-        Jugador portero4 = new Jugador("Yassine", "Bono", 4, 32, 1, 0, 0, 0, 0);
-        Jugador portero5 = new Jugador("Claudio", "Bravo", 5, 40, 1, 0, 0, 0, 0);
-        Jugador portero6 = new Jugador("Giorgi", "Mamardashvili", 6, 22, 1, 0, 0, 0, 0);
-        Jugador portero7 = new Jugador("Filip", "Jorgensen", 7, 21, 1, 0, 0, 0, 0);
-        Jugador portero8 = new Jugador("Stole", "Dimitrievski", 8, 29, 1, 0, 0, 0, 0);
-        Jugador portero9 = new Jugador("Joan", "Garcia Pons", 9, 22, 1, 0, 0, 0, 0);
-        Jugador portero10 = new Jugador("Paulo", "Gazzaniga", 10, 31, 1, 0, 0, 0, 0);
-        Jugador portero11 = new Jugador("Alejandro", "Remiro Gargallo", 11, 28, 1, 0, 0, 0, 0);
-        Jugador portero12 = new Jugador("Unai", "Simon Mendibil", 12, 25, 1, 0, 0, 0, 0);
-        Jugador portero13 = new Jugador("Sergio", "Herrera", 13, 29, 1, 0, 0, 0, 0);
-        Jugador portero14 = new Jugador("Predrag", "Rajkovic", 14, 27, 1, 0, 0, 0, 0);
-        Jugador portero15 = new Jugador("Agustin", "Marchesin", 15, 35, 1, 0, 0, 0, 0);
-        Jugador portero16 = new Jugador("Fernando", "Martinez Rubio", 16, 32, 1, 0, 0, 0, 0);
-        Jugador portero17 = new Jugador("Jeremias", "Connan Ledesma", 17, 30, 1, 0, 0, 0, 0);
-        Jugador portero18 = new Jugador("Jordi", "Masip", 18, 34, 1, 0, 0, 0, 0);
-        Jugador portero19 = new Jugador("David", "Soria Solis", 19, 30, 1, 0, 0, 0, 0);
-        Jugador portero20 = new Jugador("Edgar", "Badia", 20, 31, 1, 0, 0, 0, 0);
+
         Arbitro arbitro1 = new Arbitro("Juan Luis Pulido Santana", 5000, "Española", 1, 0, 0);
         Arbitro arbitro2 = new Arbitro("Isidro Díaz de Mera Escuderos", 5000, "Española", 2, 0, 0);
         Arbitro arbitro3 = new Arbitro("Javier Alberola Rojas", 5000, "Española", 3, 0, 0);
@@ -81,6 +62,10 @@ public class Main {
         for (int i = 0; i < DataSource.nombreEquipos.length; i++) {
             Equipo equipo = new Equipo(DataSource.nombreEquipos[i], DataSource.nombreEstadios[i],0,DataSource.nombreAficiones[i] );
             liga1.getEquipos().add(equipo);
+        }
+        for (int i = 0; i < DataSource.nombreJugadores.length; i++) {
+            Jugador jugador = new Jugador(DataSource.nombreJugadores[i], DataSource.apellidoJugadores[i],DataSource.idJugadores[i],DataSource.edad[i],DataSource.numero[i],DataSource.goles[i],DataSource.asistencias[i],DataSource.tarjetas_Amarillas[i],DataSource.tarjetas_Rojas[i]);
+            liga1.getJugadores().add(jugador);
         }
 
         /*
