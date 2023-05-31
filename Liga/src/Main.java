@@ -14,8 +14,9 @@ public class Main {
         System.out.println(liga1);
 
 
-        //MOVIDOS LOS EQUIPOS A DATASOURCE. FALTA COMPLETARLO
-
+        //MOVIDOS LOS EQUIPOS A DATASOURCE.
+        //MOVIDOS LOS JUGADORES A DATASOURCE.
+        //MOVIDOS LOS ARBITROS A DATASOURCE. FALTA POR COMPLETAR
 
 
         Arbitro arbitro1 = new Arbitro("Juan Luis Pulido Santana", 5000, "Española", 1, 0, 0);
@@ -67,7 +68,10 @@ public class Main {
             Jugador jugador = new Jugador(DataSource.nombreJugadores[i], DataSource.apellidoJugadores[i],DataSource.idJugadores[i],DataSource.edad[i],DataSource.numero[i],DataSource.goles[i],DataSource.asistencias[i],DataSource.tarjetas_Amarillas[i],DataSource.tarjetas_Rojas[i]);
             liga1.getJugadores().add(jugador);
         }
-
+        for (int i = 0; i < DataSource.nombreArbitro.length; i++) {
+            Arbitro Arbitros = new Arbitro(DataSource.nombreArbitro[i], DataSource.sueldo[i],DataSource.nacionalidad[i],DataSource.nArbitro[i],DataSource.amonestaciones[i],DataSource.expulsiones[i]);
+            liga1.getArbitros().add(Arbitros);
+        }
         /*
         Lo anterior sustituye a esto
         liga1.getEquipos().add(equipo1);
@@ -90,10 +94,7 @@ public class Main {
         liga1.getEquipos().add(equipo18);
         liga1.getEquipos().add(equipo19);
         liga1.getEquipos().add(equipo20);
-
          */
-
-
         /*
         equipo1.getJugadores().add(portero1);
         equipo2.getJugadores().add(portero2);
