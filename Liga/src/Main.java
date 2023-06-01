@@ -16,48 +16,9 @@ public class Main {
 
         //MOVIDOS LOS EQUIPOS A DATASOURCE.
         //MOVIDOS LOS JUGADORES A DATASOURCE.
-        //MOVIDOS LOS ARBITROS A DATASOURCE. FALTA POR COMPLETAR
+        //MOVIDOS LOS ARBITROS A DATASOURCE.
+        //MOVIDAS LAS JORNADAS A DATASOURCE.
 
-
-        Arbitro arbitro1 = new Arbitro("Juan Luis Pulido Santana", 5000, "Española", 1, 0, 0);
-        Arbitro arbitro2 = new Arbitro("Isidro Díaz de Mera Escuderos", 5000, "Española", 2, 0, 0);
-        Arbitro arbitro3 = new Arbitro("Javier Alberola Rojas", 5000, "Española", 3, 0, 0);
-        Arbitro arbitro4 = new Arbitro("Ricardo de Burgos Bongoetxea", 5000, "Española", 4, 0, 0);
-        Arbitro arbitro5 = new Arbitro("Carlos del Cerro Grande", 5000, "Española", 5, 0, 0);
-        Arbitro arbitro6 = new Arbitro("Jorge Figueroa Vazquez", 5000, "Española", 6, 0, 0);
-        Arbitro arbitro7 = new Arbitro("Jesus Gil Manzano", 5000, "Española", 7, 0, 0);
-        Arbitro arbitro8 = new Arbitro("Pablo Gonzalez Fuertes", 5000, "Española", 8, 0, 0);
-        Arbitro arbitro9 = new Arbitro("Alejandro Herandez Hernandez", 5000, "Española", 9, 0, 0);
-        Arbitro arbitro10 = new Arbitro("Javier Iglesias Villanueva", 5000, "Española", 10, 0, 0);
-        Arbitro arbitro11 = new Arbitro("Juan Martinez Munuera", 5000, "Española", 11, 0, 0);
-        Arbitro arbitro12 = new Arbitro("Antonio Mateu Lahoz", 5000, "Española", 12, 0, 0);
-        Arbitro arbitro13 = new Arbitro("Mario Melero Lopez", 5000, "Española", 13, 0, 0);
-        Arbitro arbitro14 = new Arbitro("Jose Luis Munuera Montero", 5000, "Española", 14, 0, 0);
-        Arbitro arbitro15 = new Arbitro("Alejandro Muñiz Ruiz", 5000, "Española", 15, 0, 0);
-        Arbitro arbitro16 = new Arbitro("Miguel Angel Ortiz Arias", 5000, "Española", 16, 0, 0);
-        Arbitro arbitro17 = new Arbitro("Valentin Pizarro Gomez", 5000, "Española", 17, 0, 0);
-        Arbitro arbitro18 = new Arbitro("Jose Maria Sanchez Martinez", 5000, "Española", 18, 0, 0);
-        Arbitro arbitro19 = new Arbitro("Cesar Soto Grado", 5000, "Española", 19, 0, 0);
-        Arbitro arbitro20 = new Arbitro("Guillermo Cuadra Fernandez", 5000, "Española", 20, 0, 0);
-        Jornada jornada1a = new Jornada("1a", "FCB-BET", 12 / 8, 1 - 0, "ninguna", "Todo OK");
-        Jornada jornada2a = new Jornada("2a", "FCB-SEV", 19 / 8, 2 - 0, "ninguna", "Todo OK");
-        Jornada jornada3a = new Jornada("3a", "FCB-ESP", 26 / 8, 4 - 0, "ninguna", "Todo OK");
-        Jornada jornada4a = new Jornada("4a", "FCB-RSC", 2 / 9, 1 - 0, "ninguna", "Todo OK");
-        Jornada jornada5a = new Jornada("5a", "FCB-VAL", 9 / 9, 3 - 1, "ninguna", "Todo OK");
-        Jornada jornada6a = new Jornada("6a", "FCB-VIL", 16 / 9, 5 - 2, "ninguna", "Todo OK");
-        Jornada jornada7a = new Jornada("7a", "FCB-GET", 30 / 9, 3 - 0, "ninguna", "Todo OK");
-        Jornada jornada8a = new Jornada("8a", "FCB-ATH", 7 / 10, 2 - 1, "ninguna", "Todo OK");
-        Jornada jornada9a = new Jornada("9a", "FCB-ATL", 14 / 10, 1 - 1, "ninguna", "Todo OK");
-        Jornada jornada10a = new Jornada("10a", "FCB-RMA", 18 / 10, 3 - 0, "ninguna", "Todo OK");
-        Jornada jornada11a = new Jornada("11a", "FCB-OSA", 22 / 10, 1 - 0, "ninguna", "Todo OK");
-        Jornada jornada12a = new Jornada("12a", "FCB-VAD", 28 / 10, 4 - 0, "ninguna", "Todo OK");
-        Jornada jornada13a = new Jornada("13a", "FCB-ALM", 4 / 11, 2 - 1, "ninguna", "Todo OK");
-        Jornada jornada14a = new Jornada("14a", "FCB-CAD", 8 / 11, 1 - 1, "ninguna", "Todo OK");
-        Jornada jornada15a = new Jornada("15a", "FCB-RAY", 29 / 11, 2 - 0, "ninguna", "Todo OK");
-        Jornada jornada16a = new Jornada("16a", "FCB-GIR", 6 / 1, 1 - 2, "ninguna", "Todo OK");
-        Jornada jornada17a = new Jornada("17a", "FCB-MRC", 13 / 1, 2 - 1, "ninguna", "Todo OK");
-        Jornada jornada18a = new Jornada("18a", "FCB-CLT", 20 / 1, 1 - 0, "ninguna", "Todo OK");
-        Jornada jornada19a = new Jornada("19a", "FCB-ELC", 27 / 1, 3 - 0, "ninguna", "Todo OK");
 
         //Observa este cambio y dime si lo entiendes
         for (int i = 0; i < DataSource.nombreEquipos.length; i++) {
@@ -71,6 +32,10 @@ public class Main {
         for (int i = 0; i < DataSource.nombreArbitro.length; i++) {
             Arbitro Arbitros = new Arbitro(DataSource.nombreArbitro[i], DataSource.sueldo[i],DataSource.nacionalidad[i],DataSource.nArbitro[i],DataSource.amonestaciones[i],DataSource.expulsiones[i]);
             liga1.getArbitros().add(Arbitros);
+        }
+        for (int i = 0; i < DataSource.n_jornada.length; i++) {
+            Jornada jornadas = new Jornada(DataSource.n_jornada[i], DataSource.equipos_participantes[i], DataSource.fecha[i], DataSource.resultado[i], DataSource.incidencias[i], DataSource.revisiones[i]);
+            liga1.getJornadas().add(jornadas);
         }
         /*
         Lo anterior sustituye a esto
@@ -94,8 +59,6 @@ public class Main {
         liga1.getEquipos().add(equipo18);
         liga1.getEquipos().add(equipo19);
         liga1.getEquipos().add(equipo20);
-         */
-        /*
         equipo1.getJugadores().add(portero1);
         equipo2.getJugadores().add(portero2);
         equipo3.getJugadores().add(portero3);
@@ -115,7 +78,7 @@ public class Main {
         equipo17.getJugadores().add(portero17);
         equipo18.getJugadores().add(portero18);
         equipo19.getJugadores().add(portero19);
-        equipo20.getJugadores().add(portero20);*/
+        equipo20.getJugadores().add(portero20);
         jornada1a.getArbitros().add(arbitro1);
         jornada2a.getArbitros().add(arbitro2);
         jornada3a.getArbitros().add(arbitro3);
@@ -135,6 +98,7 @@ public class Main {
         jornada17a.getArbitros().add(arbitro17);
         jornada18a.getArbitros().add(arbitro18);
         jornada19a.getArbitros().add(arbitro19);
+         */
         System.out.println(liga1);
         fifa.agregarliga("Premier League", "Inglaterra", 1000000000);
         rfef.agregarliga("Liga Smartbank","España",1000000000);
